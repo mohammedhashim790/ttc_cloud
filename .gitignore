@@ -31,6 +31,8 @@ pip-delete-this-directory.txt
 .cache
 .pytest_cache/
 .mypy_cache/
+package/
+*.zip
 
 # IDEs and OS
 .idea/

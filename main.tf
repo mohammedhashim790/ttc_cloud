@@ -19,5 +19,15 @@ module "dynamodb" {
   env = var.env
 }
 
+module "cloudwatch" {
+  source = "./cloudwatch"
+  env = var.env
+}
+
+module "lambda"{
+  source = "./lambda"
+  env = var.env
+}
+
 
 
