@@ -20,12 +20,12 @@ data "archive_file" "harvester_zip" {
   depends_on  = [null_resource.pip_install_harvester]
   type        = "zip"
   source_dir  = fileexists("${path.root}/functions/harvester/requirements.txt") ? "${path.root}/functions/harvester/package" : "${path.root}/functions/harvester"
-  output_path = "${path.root}/functions/harvester.zip"
+  output_path = "${path.root}/functions/harvester-${var.env}.zip"
 }
 
 resource "aws_lambda_function" "harvester" {
   filename         = data.archive_file.harvester_zip.output_path
-  function_name    = "ttc-harvester"
+  function_name    = "ttc-harvester-${var.env}"
   role             = var.lambda_role_arn
   handler          = "main.lambda_handler"
   runtime          = "python3.13"
@@ -47,12 +47,12 @@ data "archive_file" "ingestor_zip" {
   depends_on  = [null_resource.pip_install_ingestor]
   type        = "zip"
   source_dir  = fileexists("${path.root}/functions/ingestor/requirements.txt") ? "${path.root}/functions/ingestor/package" : "${path.root}/functions/ingestor"
-  output_path = "${path.root}/functions/ingestor.zip"
+  output_path = "${path.root}/functions/ingestor-${var.env}.zip"
 }
 
 resource "aws_lambda_function" "ingestor" {
   filename         = data.archive_file.ingestor_zip.output_path
-  function_name    = "ttc-ingestor"
+  function_name    = "ttc-ingestor-${var.env}"
   role             = var.lambda_role_arn
   handler          = "main.lambda_handler"
   runtime          = "python3.13"
@@ -74,12 +74,12 @@ data "archive_file" "normaliser_zip" {
   depends_on  = [null_resource.pip_install_normaliser]
   type        = "zip"
   source_dir  = fileexists("${path.root}/functions/normaliser/requirements.txt") ? "${path.root}/functions/normaliser/package" : "${path.root}/functions/normaliser"
-  output_path = "${path.root}/functions/normaliser.zip"
+  output_path = "${path.root}/functions/normaliser-${var.env}.zip"
 }
 
 resource "aws_lambda_function" "normaliser" {
   filename         = data.archive_file.normaliser_zip.output_path
-  function_name    = "ttc-normaliser"
+  function_name    = "ttc-normaliser-${var.env}"
   role             = var.lambda_role_arn
   handler          = "main.lambda_handler"
   runtime          = "python3.13"
@@ -101,12 +101,12 @@ data "archive_file" "accumulator_zip" {
   depends_on  = [null_resource.pip_install_accumulator]
   type        = "zip"
   source_dir  = fileexists("${path.root}/functions/accumulator/requirements.txt") ? "${path.root}/functions/accumulator/package" : "${path.root}/functions/accumulator"
-  output_path = "${path.root}/functions/accumulator.zip"
+  output_path = "${path.root}/functions/accumulator-${var.env}.zip"
 }
 
 resource "aws_lambda_function" "accumulator" {
   filename         = data.archive_file.accumulator_zip.output_path
-  function_name    = "ttc-accumulator"
+  function_name    = "ttc-accumulator-${var.env}"
   role             = var.lambda_role_arn
   handler          = "main.lambda_handler"
   runtime          = "python3.13"
