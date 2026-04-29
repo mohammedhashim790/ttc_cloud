@@ -1,0 +1,50 @@
+# Terraform
+.terraform/
+*.tfplan
+*.tfstate
+*.tfstate.*
+.terraform.lock.hcl
+
+# AWS
+.aws/
+*.log
+
+# Node.js (if applicable for Lambda)
+node_modules/
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+.pnp/
+.pnp.js
+
+# Python (if applicable for Lambda)
+__pycache__/
+*.pyc
+*.pyo
+.Python
+env/
+venv/
+pip-log.txt
+pip-delete-this-directory.txt
+.tox/
+.coverage
+.cache
+.pytest_cache/
+.mypy_cache/
+
+# IDEs and OS
+.idea/
+.DS_Store
+*.iml
+.vscode/
+
+# Build artifacts
+dist/
+build/
+
+# Local configuration
+*.env
+.env.local
+.env.*.local
+.terraformrc
+terraform.rc
