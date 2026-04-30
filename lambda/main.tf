@@ -27,7 +27,7 @@ resource "aws_lambda_function" "harvester" {
   filename         = data.archive_file.harvester_zip.output_path
   function_name    = "ttc-harvester-${var.env}"
   role             = var.lambda_role_arn
-  handler          = "main.lambda_handler"
+  handler          = "index.lambda_handler"
   runtime          = "python3.13"
   source_code_hash = data.archive_file.harvester_zip.output_base64sha256
 }
@@ -54,7 +54,7 @@ resource "aws_lambda_function" "ingestor" {
   filename         = data.archive_file.ingestor_zip.output_path
   function_name    = "ttc-ingestor-${var.env}"
   role             = var.lambda_role_arn
-  handler          = "main.lambda_handler"
+  handler          = "index.lambda_handler"
   runtime          = "python3.13"
   source_code_hash = data.archive_file.ingestor_zip.output_base64sha256
 }
@@ -81,7 +81,7 @@ resource "aws_lambda_function" "normaliser" {
   filename         = data.archive_file.normaliser_zip.output_path
   function_name    = "ttc-normaliser-${var.env}"
   role             = var.lambda_role_arn
-  handler          = "main.lambda_handler"
+  handler          = "index.lambda_handler"
   runtime          = "python3.13"
   source_code_hash = data.archive_file.normaliser_zip.output_base64sha256
 }
@@ -108,7 +108,7 @@ resource "aws_lambda_function" "accumulator" {
   filename         = data.archive_file.accumulator_zip.output_path
   function_name    = "ttc-accumulator-${var.env}"
   role             = var.lambda_role_arn
-  handler          = "main.lambda_handler"
+  handler          = "index.lambda_handler"
   runtime          = "python3.13"
   source_code_hash = data.archive_file.accumulator_zip.output_base64sha256
 }
