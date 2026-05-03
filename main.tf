@@ -19,15 +19,19 @@ module "dynamodb" {
   env = var.env
 }
 
+
+module "permissions" {
+  source = "./permissions"
+  env    = var.env
+}
+
+module "lambda" {
+  source          = "./lambda"
+  env             = var.env
+  lambda_role_arn = module.permissions.lambda_role_arn
+}
+
 module "cloudwatch" {
   source = "./cloudwatch"
   env = var.env
 }
-
-module "lambda"{
-  source = "./lambda"
-  env = var.env
-}
-
-
-
