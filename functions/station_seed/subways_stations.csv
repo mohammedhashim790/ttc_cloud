@@ -1,0 +1,111 @@
+id,name,mode
+235,Bay Station,SUBWAY
+246,Union Station,SUBWAY
+317,Bayview Station,SUBWAY
+760,College Station,SUBWAY
+776,Christie Station,SUBWAY
+841,Queen's Park Station,SUBWAY
+1027,Dupont Station,SUBWAY
+1234,Lawrence Station,SUBWAY
+1456,Museum Station,SUBWAY
+1594,York University,SUBWAY
+1677,Yorkdale Station,SUBWAY
+2013,Dufferin Station,SUBWAY
+2136,TMU Station,SUBWAY
+2193,St Patrick Station,SUBWAY
+3106,Downsview Park Station,SUBWAY
+3212,Finch Station,SUBWAY
+3213,Bloor Station,SUBWAY
+3219,Rosedale Station,SUBWAY
+3234,King Station,SUBWAY
+3238,Queen Station,SUBWAY
+3245,Wellesley Station,SUBWAY
+3539,Kennedy Station,SUBWAY
+3665,Glencairn Station,SUBWAY
+4408,Lansdowne Station,SUBWAY
+6858,Osgoode Station,SUBWAY
+7204,Leslie Station,SUBWAY
+7275,Sheppard West Station,SUBWAY
+7308,Sherbourne Station,SUBWAY
+8953,Summerhill Station,SUBWAY
+8977,Eglinton Station,SUBWAY
+8984,North York Centre Station,SUBWAY
+9053,St Clair Station,SUBWAY
+9065,York Mills Station,SUBWAY
+9126,Don Valley Station,LRT
+9149,Finch West Station,SUBWAY
+9895,Cedarvale Station,SUBWAY
+11376,Victoria Park Station,SUBWAY
+11780,Keele Station,SUBWAY
+12202,Lawrence West Station,SUBWAY
+13677,Bessarion Station,SUBWAY
+13731,Warden Station,SUBWAY
+13735,Main Street Station,SUBWAY
+13737,Woodbine Station,SUBWAY
+13739,Coxwell Station,SUBWAY
+13741,Greenwood Station,SUBWAY
+13743,Donlands Station,SUBWAY
+13745,Pape Station,SUBWAY
+13747,Chester Station,SUBWAY
+13749,Broadview Station,SUBWAY
+13751,Castle Frank Station,SUBWAY
+13755,Yonge Station,SUBWAY
+13759,Bathurst Station,SUBWAY
+13763,Ossington Station,SUBWAY
+13769,Dundas West Station,SUBWAY
+13773,High Park Station,SUBWAY
+13775,Runnymede Station,SUBWAY
+13777,Jane Station,SUBWAY
+13779,Old Mill Station,SUBWAY
+13781,Royal York Station,SUBWAY
+13783,Islington Station,SUBWAY
+13785,Kipling Station,SUBWAY
+13797,Davisville Station,SUBWAY
+13817,St Andrew Station,SUBWAY
+13829,St Clair West Station,SUBWAY
+13839,Wilson Station,SUBWAY
+13851,Spadina Station,SUBWAY
+13855,St George Station,SUBWAY
+13859,Sheppard-Yonge Station,SUBWAY
+14109,Don Mills Station,SUBWAY
+15571,Pioneer Village Station,SUBWAY
+15660,Highway 407 Station,SUBWAY
+15662,Vaughan Metropolitan Centre Station,SUBWAY
+16067,Mount Dennis Station,LRT
+16071,Avenue Station,LRT
+16075,Laird Station,LRT
+16079,Sloane Station,LRT
+16083,Caledonia Station,LRT
+16085,Golden Mile Station,LRT
+16202,Keelesdale Station,LRT
+16204,Fairbank Station,LRT
+16206,Oakwood Station,LRT
+16208,Forest Hill Station,LRT
+16210,Chaplin Station,LRT
+16212,Mount Pleasant Station,LRT
+16214,Leaside Station,LRT
+16216,Sunnybrook Park Station,LRT
+16218,Aga Khan Park & Museum Station,LRT
+16220,Wynford Station,LRT
+16222,O'Connor Station,LRT
+16224,Pharmacy Station,LRT
+16226,Hakimi Lebovic Station,LRT
+16228,Birchmount Station,LRT
+16230,Ionview Station,LRT
+16289,Humber College Station,LRT
+16291,Westmore Station,LRT
+16293,Martin Grove Station,LRT
+16295,Albion Station,LRT
+16297,Stevenson Station,LRT
+16299,Mount Olive Station,LRT
+16301,Rowntree Mills Station,LRT
+16303,Pearldale Station,LRT
+16305,Duncanwoods Station,LRT
+16307,Milvan Rumike Station,LRT
+16309,Emery Station,LRT
+16311,Signet Arrow Station,LRT
+16313,Norfinch Oakdale Station,LRT
+16315,Jane and Finch Station,LRT
+16317,Driftwood Station,LRT
+16319,Tobermory Station,LRT
+16321,Sentinel Station,LRT
